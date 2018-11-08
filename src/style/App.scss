@@ -23,6 +23,8 @@ a {
 
 nav {
   height: 70px;
+  position: fixed;
+  z-index: 10;
 }
 
 .nav-ul {
@@ -31,6 +33,7 @@ nav {
   list-style-type: none;
   background-color: $bg-blur;
   margin: 0;
+  padding: 0;
 }
 
 .nav-li {
