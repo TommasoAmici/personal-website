@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Navbar from "../components/Navbar";
-import TableOfContents from "../components/TableOfContents";
+import TableOfContentsBlog from "../components/TableOfContentsBlog";
 
 export default ({ data }) => {
   const { markdownRemark } = data;
@@ -21,8 +21,8 @@ export default ({ data }) => {
             />
           </div>
         </div>
-        <TableOfContents
-          title="Other projects"
+        <TableOfContentsBlog
+          title="Other posts"
           classes="blog-side-list"
           all={false}
         />

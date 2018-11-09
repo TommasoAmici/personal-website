@@ -1,0 +1,33 @@
+.page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blog-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.blog-post {
+  margin-left: 10%;
+  margin-top: 10%;
+  line-height: 30px;
+}
+
+.misc-list {
+  font-size: 30px;
+}
+
+.blog-list {
+  list-style: none;
+  background-color: $bg-blur;
+  width: 20%;
+  height: 100%;
+  padding: 20px 0px 20px 30px;
+}
+
+.blog-side-list {
+  margin-top: 30%;
+}
