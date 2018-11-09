@@ -17,7 +17,6 @@ export default class Pages extends React.Component {
     document.title = title;
   };
   render() {
-    document.title = "Home";
     return (
       <div>
         <Navbar

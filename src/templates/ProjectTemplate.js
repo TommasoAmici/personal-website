@@ -6,7 +6,7 @@ import TableOfContents from "../components/TableOfContents";
 export default ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  document.title = frontmatter.title;
+
   return (
     <div>
       <Navbar />
