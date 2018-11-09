@@ -9,10 +9,16 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.0.33",
     "gatsby-plugin-sass": "^2.0.4",
+    "gatsby-plugin-sharp": "^2.0.12",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-remark": "^2.1.12",
     "node-sass": "^4.10.0",
     "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react-dom": "^16.5.1",
+    "react-spring": "^6.1.8"
   }
 }
