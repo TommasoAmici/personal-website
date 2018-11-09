@@ -9,13 +9,14 @@ const NavLink = props => (
 );
 
 export default props => {
-  const { clickHome, clickAbout, clickProjects } = props;
+  const { clickHome, clickAbout, clickProjects, clickMisc } = props;
   return (
     <nav>
       <ul className="nav-ul">
         <NavLink onClick={clickHome}>Home</NavLink>
         <NavLink onClick={clickAbout}>About</NavLink>
         <NavLink onClick={clickProjects}>Projects</NavLink>
+        <NavLink onClick={clickMisc}>Things I liked recently</NavLink>
       </ul>
     </nav>
   );
