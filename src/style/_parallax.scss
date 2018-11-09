@@ -17,7 +17,7 @@
 
   @media screen and (max-width: 1000px) {
     font-size: 300px;
-}
+  }
 
   @media screen and (max-width: 750px) {
     font-size: 200px;
@@ -49,12 +49,11 @@
 
 .paragraph {
   font-size: 16px;
-}
-
-.paragraph > p {
-  width: 40%;
-  margin-left: 150px;
-  padding-top: 40px;
+  p {
+    width: 40%;
+    margin-left: 150px;
+    padding-top: 40px;
+  }
 }
 
 .second {
@@ -68,8 +67,10 @@
 }
 
 .header {
-  margin-left: 150px;
-  margin-top: -100px;
+  margin: {
+    left: 150px;
+    top: -100px;
+  }
   font-size: 70px;
   color: $text-color;
 }
@@ -82,8 +83,10 @@
 }
 
 .pro-pic-layer {
-  margin-left: 300px;
-  margin-top: -40px;
+  margin: {
+    left: 300px;
+    top: -40px;
+  }
 }
 
 .pro-pic {
@@ -93,8 +96,10 @@
 
 .blog-list {
   font-size: 20px;
-  padding-top: 15px;
-  padding-left: 15px;
+  padding: {
+    top: 15px;
+    left: 15px;
+  }
   line-height: 30px;
 }
 
@@ -142,8 +147,8 @@
 .pink-2 {
   background: linear-gradient(
     to right,
-    rgba(255, 200, 99, 0.856) 100%,
-    rgba(80, 17, 131, 0.664) 100%
+    rgba(255, 200, 99, 0.925) 100%,
+    rgb(80, 17, 131) 100%
   );
 }
 
