@@ -5,6 +5,8 @@ $text-color: rgb(227, 233, 250);
 $text-hover: rgb(173, 178, 190);
 
 @import "_parallax";
+@import "_projects";
+@import "_blog";
 
 html,
 body {
@@ -48,4 +50,12 @@ nav {
     text-decoration: underline;
     color: $text-hover;
   }
+}
+
+.about-content {
+  font-size: 25px;
+}
+
+.no-underline {
+  text-decoration: none;
 }

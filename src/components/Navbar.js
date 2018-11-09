@@ -16,7 +16,7 @@ export default props => {
         <NavLink onClick={clickHome}>Home</NavLink>
         <NavLink onClick={clickAbout}>About</NavLink>
         <NavLink onClick={clickProjects}>Projects</NavLink>
-        <NavLink onClick={clickMisc}>Things I liked recently</NavLink>
+        <NavLink onClick={clickMisc}>Misc</NavLink>
       </ul>
     </nav>
   );
