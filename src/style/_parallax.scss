@@ -1,0 +1,136 @@
+.container > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  pointer-events: none;
+  justify-content: start !important;
+}
+
+.title {
+  font-size: 400px;
+  margin-top: 270px;
+  color: $bg-blur;
+}
+
+.caption {
+  font-size: 25px;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+
+.paragraph > p {
+  width: 40%;
+  margin-left: 150px;
+  padding-top: 40px;
+}
+
+.second {
+  font-size: 20px;
+}
+
+.number span {
+  display: inline-block;
+  position: relative;
+  transform: translate3d(-35%, 0, 0);
+}
+
+.header {
+  margin-left: 150px;
+  margin-top: -100px;
+  font-size: 70px;
+  color: $text-color;
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+  padding-right: 20px;
+  z-index: 20;
+}
+
+.pro-pic-layer {
+  margin-left: 300px;
+  margin-top: -40px;
+}
+
+.pro-pic {
+  border-radius: 50%;
+  opacity: 0.96;
+}
+
+.blog-list {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
+  line-height: 30px;
+}
+
+.stripe {
+  height: 2px;
+  width: auto;
+}
+
+.slopeBegin {
+  background-color: $bg-color;
+  clip-path: polygon(20vw 0, 70% 0, calc(70% - 20vw) 100%, 0 100%);
+}
+
+.slopeEnd {
+  clip-path: polygon(
+    70% 0,
+    100% 0,
+    calc(100% - 20vw) 100%,
+    calc(70% - 20vw) 100%
+  );
+}
+
+.slopeBegin2 {
+  background-color: $bg-color;
+  clip-path: polygon(38% 0, 100% 0, 100% 60%);
+}
+
+.slopeEnd2 {
+  clip-path: polygon(38% 0, 100% 0, 100% 60%);
+}
+
+.slopeBegin,
+.slopeEnd,
+.slopeBegin2,
+.slopeEnd2 {
+  position: absolute;
+  width: 140%;
+  height: 100%;
+}
+
+.pink {
+  background: linear-gradient(to right, deeppink 0%, coral 100%);
+}
+
+.pink-2 {
+  background: linear-gradient(
+    to right,
+    rgba(255, 200, 99, 0.856) 100%,
+    rgba(80, 17, 131, 0.664) 100%
+  );
+}
+
+.teal {
+  background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
+}
+
+.tomato {
+  background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
+.greenleaf {
+  background: linear-gradient(
+    to right,
+    rgb(161, 167, 108) 0%,
+    rgb(54, 179, 54) 100%
+  );
+}
