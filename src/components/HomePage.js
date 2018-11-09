@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { ParallaxLayer } from "react-spring/dist/addons";
 import SocialLogos from "./SocialLogos";
+import Slope from "./Slope";
 
 import pic from "./images/pic.png";
 
@@ -13,21 +14,15 @@ export default ({
   second,
   gradient,
   gradient2,
-  onClick
+  id
 }) => (
   <>
-    <ParallaxLayer offset={offset} speed={0.2}>
-      <div className="slopeBegin" />
-    </ParallaxLayer>
-
-    <ParallaxLayer offset={offset} speed={-0.2} onClick={onClick}>
-      <div className={classNames("slopeEnd", gradient)} />
-    </ParallaxLayer>
+    <Slope offset={offset} gradient={gradient} />
 
     <ParallaxLayer offset={offset} speed={0.2}>
-      <div className="slopeBegin2" />
+      <div className="slopeBegin2" id={id} />
     </ParallaxLayer>
-    <ParallaxLayer offset={offset} speed={-0.2} onClick={onClick}>
+    <ParallaxLayer offset={offset} speed={-0.2}>
       <div className={classNames("slopeEnd2", gradient2)} />
     </ParallaxLayer>
 
@@ -46,7 +41,7 @@ export default ({
     </ParallaxLayer>
 
     <ParallaxLayer className="pro-pic-layer" offset={offset} speed={0.5}>
-      <img className="pro-pic" src={pic} alt="portrait picture" />
+      <img className="pro-pic" src={pic} alt="portrait of me" />
     </ParallaxLayer>
   </>
 );

@@ -1,49 +1,47 @@
 import React from "react";
 import classNames from "classnames";
 import { ParallaxLayer } from "react-spring/dist/addons";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import Slope from "./Slope";
 
-export default ({ offset, title, caption, gradient }) => (
+export default ({ offset, paragraph, gradient, id }) => (
   <StaticQuery
     query={graphql`
       query {
         allMarkdownRemark(
-          filter: { frontmatter: { path: { regex: "/things-i-like/" } } }
+          filter: { frontmatter: { title: { regex: "/About me/" } } }
         ) {
           edges {
             node {
+              id
               frontmatter {
-                path
                 title
               }
+              html
             }
           }
         }
       }
     `}
     render={data => {
-      const things = data.allMarkdownRemark.edges.map(e => (
-        <li key={e.node.frontmatter.path}>
-          <Link to={e.node.frontmatter.path}>{e.node.frontmatter.title}</Link>
-        </li>
-      ));
+      const about = data.allMarkdownRemark.edges[0].node;
       return (
         <>
           <Slope offset={offset} gradient={gradient} />
 
-          {title && (
-            <ParallaxLayer className="text title" offset={offset} speed={0.3}>
-              <span>{title}</span>
-            </ParallaxLayer>
-          )}
-
           <ParallaxLayer className="text header" offset={offset} speed={0.4}>
             <span>
-              <p className="caption">{caption}</p>
+              <h2>{about.frontmatter.title}</h2>
               <div className={classNames("stripe", gradient)} />
-              <ul className="misc-list">{things}</ul>
+              <div
+                className="about-content"
+                dangerouslySetInnerHTML={{ __html: about.html }}
+              />
             </span>
+          </ParallaxLayer>
+
+          <ParallaxLayer className="text paragraph" offset={offset} speed={0.3}>
+            <p>{paragraph}</p>
           </ParallaxLayer>
         </>
       );

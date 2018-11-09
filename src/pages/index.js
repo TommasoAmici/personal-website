@@ -1,56 +1,15 @@
 import React from "react";
-import classNames from "classnames";
 import Navbar from "../components/Navbar";
 import HomePage from "../components/HomePage";
 import ProjectsPage from "../components/ProjectsPage";
 import ThingsPage from "../components/ThingsPage";
+import AboutPage from "../components/AboutPage";
 import "../style/App.scss";
 
 // Inspired by Corey Haggards "Screeners"
 // https://dribbble.com/shots/4138489-Screeners
-import { Parallax, ParallaxLayer } from "react-spring/dist/addons";
-
-const Page = ({
-  offset,
-  title,
-  caption,
-  first,
-  second,
-  paragraph,
-  gradient,
-  onClick
-}) => (
-  <>
-    <ParallaxLayer offset={offset} speed={0.2}>
-      <div className="slopeBegin" />
-    </ParallaxLayer>
-
-    <ParallaxLayer offset={offset} speed={-0.2} onClick={onClick}>
-      <div className={classNames("slopeEnd", gradient)} />
-    </ParallaxLayer>
-
-    {title && (
-      <ParallaxLayer className="text title" offset={offset} speed={0.3}>
-        <span>{title}</span>
-      </ParallaxLayer>
-    )}
-
-    <ParallaxLayer className="text header" offset={offset} speed={0.4}>
-      <span>
-        <p className="caption">{caption}</p>
-        <div className={classNames("stripe", gradient)} />
-        <p>{first}</p>
-        <p className="second">{second}</p>
-      </span>
-    </ParallaxLayer>
-
-    {paragraph && (
-      <ParallaxLayer className="text paragraph" offset={offset} speed={0.3}>
-        <p>{paragraph}</p>
-      </ParallaxLayer>
-    )}
-  </>
-);
+import { Parallax } from "react-spring/dist/addons";
+// workaround for url for each page in parallax: duplicate page and scroll on load
 
 export default class Pages extends React.Component {
   scroll = (to, title) => {
@@ -71,23 +30,19 @@ export default class Pages extends React.Component {
           className="container"
           ref="parallax"
           pages={4}
-          horizontal
-          scrolling={false}
+          native
+          horizontal={false}
+          scrolling={true}
         >
           <HomePage
             offset={0}
             gradient="pink"
             gradient2="pink-2"
             first="Tommaso Amici"
-            caption="Out of Turin, Amsterdam based"
+            caption="Out of Turin, based in Amsterdam"
             title="Home"
           />
-          <Page
-            offset={1}
-            gradient="teal"
-            caption="About me"
-            paragraph="Exercitation in eu Lorem eu ex ex est mollit occaecat esse consectetur. Aliqua minim do consequat adipisicing ut cillum. Consectetur tempor voluptate adipisicing laboris aliqua sint non cillum proident ut aute ipsum. Sint esse anim irure commodo reprehenderit Lorem pariatur esse ipsum commodo."
-          />
+          <AboutPage offset={1} gradient="teal" />
           <ProjectsPage
             offset={2}
             gradient="tomato"
