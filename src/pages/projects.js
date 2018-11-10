@@ -1,10 +1,10 @@
 import React from "react";
 import TableOfContents from "../components/TableOfContents";
-import Navbar from "../components/Navbar";
+import { NavbarAlt } from "../components/Navbar";
 
 export default () => (
   <>
-    <Navbar />
+    <NavbarAlt />
     <div className="table-of-projects">
       <TableOfContents all={true} />
     </div>
