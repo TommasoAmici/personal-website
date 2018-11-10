@@ -43,6 +43,9 @@ export default ({ offset, title, caption, gradient }) => (
               <p className="caption">{caption}</p>
               <div className={classNames("stripe", gradient)} />
               <ul className="misc-list">{things}</ul>
+              <div className="archive-link">
+                <Link to="/misc">Archive</Link>
+              </div>
             </span>
           </ParallaxLayer>
         </>

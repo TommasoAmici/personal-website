@@ -26,7 +26,7 @@ export default class Pages extends React.Component {
           clickHome={() => this.scroll(0, "Home")}
           clickAbout={() => this.scroll(1, "About")}
           clickProjects={() => this.scroll(2, "Projects")}
-          clickMisc={() => this.scroll(3, "Things I liked recently")}
+          clickMisc={() => this.scroll(3, "Misc")}
         />
         <Parallax
           className="container"
