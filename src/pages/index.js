@@ -12,6 +12,9 @@ import { Parallax } from "react-spring/dist/addons";
 // workaround for url for each page in parallax: duplicate page and scroll on load
 
 export default class Pages extends React.Component {
+  componentDidMount() {
+    document.title = "Tommaso Amici";
+  }
   scroll = (to, title) => {
     this.refs.parallax.scrollTo(to);
     document.title = title;
