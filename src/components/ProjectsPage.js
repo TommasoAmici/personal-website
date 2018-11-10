@@ -41,7 +41,7 @@ export default ({ offset, title, caption, id, gradient }) => (
         </Link>
       ));
       projects.push(
-        <Link className="no-underline" to="/projects" key={"more"}>
+        <Link className="no-underline" to="/projects-archive" key={"more"}>
           <div
             className={classNames(
               "project hvr-shrink",
