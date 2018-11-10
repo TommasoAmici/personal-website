@@ -32,11 +32,9 @@ export default ({ offset, title, caption, gradient }) => (
         <>
           <Slope offset={offset} gradient={gradient} />
 
-          {title && (
-            <ParallaxLayer className="text title" offset={offset} speed={0.3}>
-              <span>{title}</span>
-            </ParallaxLayer>
-          )}
+          <ParallaxLayer className="text title" offset={offset} speed={0.3}>
+            <span>{title}</span>
+          </ParallaxLayer>
 
           <ParallaxLayer className="text header" offset={offset} speed={0.4}>
             <span>
