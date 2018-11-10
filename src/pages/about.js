@@ -5,6 +5,6 @@ import Main from "../components/Main";
 
 export default class Pages extends React.Component {
   render() {
-    return <Main scrollTo={3} title={"Misc"} />;
+    return <Main scrollTo={1} title={"About"} />;
   }
 }

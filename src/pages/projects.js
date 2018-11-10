@@ -1,12 +1,10 @@
 import React from "react";
-import TableOfContents from "../components/TableOfContents";
-import { NavbarAlt } from "../components/Navbar";
+import Main from "../components/Main";
 
-export default () => (
-  <>
-    <NavbarAlt />
-    <div className="table-of-projects">
-      <TableOfContents all={true} />
-    </div>
-  </>
-);
+// workaround for url for each page in parallax: duplicate page and scroll on load
+
+export default class Pages extends React.Component {
+  render() {
+    return <Main scrollTo={2} title={"Projects"} />;
+  }
+}
