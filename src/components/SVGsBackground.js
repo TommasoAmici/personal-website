@@ -58,6 +58,21 @@ const Circle = props => {
   );
 };
 
+const Square = props => {
+  const { size, transX, transY } = props;
+  const color = getColor();
+  return (
+    <svg
+      width={`${size}px`}
+      height={`${size}px`}
+      viewBox={`0 0 ${size * 2} ${size * 2}`}
+      style={{ transform: `translate(${transX}px,${transY}px)` }}
+    >
+      <rect height={size} width={size} color={color} fill={color} />
+    </svg>
+  );
+};
+
 class Layer extends React.Component {
   randSize = () => Math.floor(Math.random() * 50 + 1);
   randX = () => Math.floor(Math.random() * window.innerWidth + 1);
@@ -81,6 +96,14 @@ class Layer extends React.Component {
           transY={this.randY()}
         />
       );
+      layer.push(
+        <Square
+          key={j + "c"}
+          size={this.randSize()}
+          transX={this.randX()}
+          transY={this.randY()}
+        />
+      );
     }
     return layer;
   }
@@ -88,7 +111,7 @@ class Layer extends React.Component {
 
 const createLayers = () => {
   let layers = [];
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 30; i++) {
     const speed = (i + 1) / 10;
     layers.push(
       <ParallaxLayer offset={speed} speed={speed} key={i + "a"}>
