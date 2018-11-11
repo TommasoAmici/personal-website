@@ -1,7 +1,12 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 export default props => (
   <div className="blog-container">
+    <Helmet>
+      <title>{props.title}</title>
+      <meta name="description" content={`${props.description}`} />
+    </Helmet>
     <div className="blog-post">
       <h1>{props.title}</h1>
       <small>{props.date}</small>

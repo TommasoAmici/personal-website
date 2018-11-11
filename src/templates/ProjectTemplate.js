@@ -12,7 +12,12 @@ export default ({ data }) => {
     <div>
       <NavbarAlt />
       <div className="page-container">
-        <Post title={frontmatter.title} date={frontmatter.date} html={html} />
+        <Post
+          title={frontmatter.title}
+          date={frontmatter.date}
+          description={frontmatter.description}
+          html={html}
+        />
         <TableOfContents
           title="Other projects"
           classes="blog-side-list"
@@ -31,6 +36,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        description
       }
     }
   }
