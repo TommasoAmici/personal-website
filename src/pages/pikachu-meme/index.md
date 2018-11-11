@@ -1,12 +1,10 @@
 ---
 path: "/things-i-like/pikachu-meme"
-title: "Surprised pikachu meme"
+title: "Surprised Pikachu"
 date: "2018-11-09"
 posttype: "blog"
 ---
 
-# Surprised Pikachu
-
-Nice meme!
+I really liked this, and I think you should too.
 
 ![Surprised Pikachu meme](./meme.png "Surprised Pikachu meme")
