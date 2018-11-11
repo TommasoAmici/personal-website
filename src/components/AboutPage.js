@@ -4,7 +4,7 @@ import { ParallaxLayer } from "react-spring/dist/addons";
 import { graphql, StaticQuery } from "gatsby";
 import Slope from "./Slope";
 
-export default ({ offset, paragraph, gradient, id }) => (
+export default ({ offset, gradient }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -38,10 +38,6 @@ export default ({ offset, paragraph, gradient, id }) => (
                 dangerouslySetInnerHTML={{ __html: about.html }}
               />
             </span>
-          </ParallaxLayer>
-
-          <ParallaxLayer className="text paragraph" offset={offset} speed={0.3}>
-            <p>{paragraph}</p>
           </ParallaxLayer>
         </>
       );

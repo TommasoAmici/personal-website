@@ -28,16 +28,13 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      console.log(node);
       if (node.frontmatter.posttype == "project") {
-        console.log("in the pjs yo");
         createPage({
           path: node.frontmatter.path,
           component: projectPostTemplate,
           context: {} // additional data can be passed via context
         });
       } else {
-        console.log("in the burbs");
         createPage({
           path: node.frontmatter.path,
           component: blogPostTemplate,

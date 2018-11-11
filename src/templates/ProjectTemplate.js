@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Navbar from "../components/Navbar";
+import { NavbarAlt } from "../components/Navbar";
 import TableOfContents from "../components/TableOfContents";
 
 export default ({ data }) => {
@@ -9,7 +9,7 @@ export default ({ data }) => {
 
   return (
     <div>
-      <Navbar />
+      <NavbarAlt />
       <div className="page-container">
         <div className="blog-container">
           <div className="blog-post">

@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Navbar from "../components/Navbar";
+import { NavbarAlt } from "../components/Navbar";
 import TableOfContentsBlog from "../components/TableOfContentsBlog";
 
 export default ({ data }) => {
@@ -8,7 +8,7 @@ export default ({ data }) => {
   const { frontmatter, html } = markdownRemark;
   return (
     <div>
-      <Navbar />
+      <NavbarAlt />
       <div className="page-container">
         <div className="blog-container">
           <div className="blog-post">
