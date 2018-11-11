@@ -1,10 +1,6 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "react-spring/dist/addons";
 
-const randSize = () => Math.floor(Math.random() * 50 + 1);
-const randX = () => Math.floor(Math.random() * window.innerWidth + 1);
-const randY = () => Math.floor(Math.random() * window.innerHeight + 1);
-
 const getColor = () => {
   const colors = [
     "deeppink",
@@ -62,37 +58,41 @@ const Circle = props => {
   );
 };
 
-const createLayer = () => {
-  let layer = [];
-  for (let j = 0; j < 3; j++) {
-    layer.push(
-      <Cross
-        key={j + "a"}
-        size={randSize()}
-        transX={randX()}
-        transY={randY()}
-      />
-    );
-    layer.push(
-      <Circle
-        key={j + "b"}
-        size={randSize()}
-        transX={randX()}
-        transY={randY()}
-      />
-    );
+class Layer extends React.Component {
+  randSize = () => Math.floor(Math.random() * 50 + 1);
+  randX = () => Math.floor(Math.random() * window.innerWidth + 1);
+  randY = () => Math.floor(Math.random() * window.innerHeight + 1);
+  render() {
+    let layer = [];
+    for (let j = 0; j < 3; j++) {
+      layer.push(
+        <Cross
+          key={j + "a"}
+          size={this.randSize()}
+          transX={this.randX()}
+          transY={this.randY()}
+        />
+      );
+      layer.push(
+        <Circle
+          key={j + "b"}
+          size={this.randSize()}
+          transX={this.randX()}
+          transY={this.randY()}
+        />
+      );
+    }
+    return layer;
   }
-  return layer;
-};
+}
 
 const createLayers = () => {
   let layers = [];
   for (let i = 0; i < 9; i++) {
-    const layer = createLayer();
     const speed = (i + 1) / 10;
     layers.push(
       <ParallaxLayer offset={speed} speed={speed} key={i + "a"}>
-        {layer}
+        <Layer />
       </ParallaxLayer>
     );
   }
