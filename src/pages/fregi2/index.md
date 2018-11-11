@@ -3,6 +3,7 @@ path: "/projects/fregi-e-majuscole"
 title: "Fregi e Majuscole"
 date: "2018-11-06"
 posttype: "project"
+description: "A static website for Turin based Fregi e Majuscole"
 ---
 
 Simple interface alluding to the company's business domain in publishing.

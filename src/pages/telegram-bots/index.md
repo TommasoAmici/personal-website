@@ -3,6 +3,7 @@ path: "/projects/telegram-bots"
 title: "Telegram bots"
 date: "2018-11-06"
 posttype: "project"
+description: "Project page for my Telegram bots"
 ---
 
 ## Bot to repost goals from /r/soccer
