@@ -11,3 +11,4 @@ This very website you're currently on. Open source on [Github](https://github.co
 - GatsbyJS as a semi-CMS
 - `react-spring` for the animations
 - No CSS frameworks
+- Deployed on [Netlify](https://www.netlify.com/)
