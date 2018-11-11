@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { ParallaxLayer } from "react-spring/dist/addons";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import Slope from "./Slope";
 
 export default ({ offset, gradient }) => (
