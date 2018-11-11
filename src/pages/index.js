@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Main from "../components/Main";
 import "../style/App.scss";
 
@@ -6,6 +7,17 @@ import "../style/App.scss";
 
 export default class Pages extends React.Component {
   render() {
-    return <Main scrollTo={0} title={"Tommaso Amici"} />;
+    return (
+      <div>
+        <Helmet>
+          <title>Tommaso Amici</title>
+          <meta
+            name="description"
+            content="My personal website and portfolio"
+          />
+        </Helmet>
+        <Main scrollTo={0} />
+      </div>
+    );
   }
 }

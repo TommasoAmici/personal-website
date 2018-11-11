@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { NavbarAlt } from "../components/Navbar";
 import TableOfContents from "../components/TableOfContents";
+import Post from "./Post";
 
 export default ({ data }) => {
   const { markdownRemark } = data;
@@ -11,16 +12,12 @@ export default ({ data }) => {
     <div>
       <NavbarAlt />
       <div className="page-container">
-        <div className="blog-container">
-          <div className="blog-post">
-            <h1>{frontmatter.title}</h1>
-            <small>{frontmatter.date}</small>
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-          </div>
-        </div>
+        <Post
+          title={frontmatter.title}
+          date={frontmatter.date}
+          description={frontmatter.description}
+          html={html}
+        />
         <TableOfContents
           title="Other projects"
           classes="blog-side-list"
@@ -39,6 +36,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        description
       }
     }
   }
