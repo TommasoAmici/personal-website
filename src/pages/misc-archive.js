@@ -1,8 +1,8 @@
 import React from "react";
 import { NavbarAlt } from "../components/Navbar";
 import TableOfContentsBlog from "../components/TableOfContentsBlog";
-import TableOfContents from "../components/TableOfContents";
 import Background from "../components/SVGsBackground";
+import "../style/App.scss";
 
 export default () => (
   <>
