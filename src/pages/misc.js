@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "../components/Main";
+import "../style/App.scss";
 
 // workaround for url for each page in parallax: duplicate page and scroll on load
 
