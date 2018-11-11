@@ -9,3 +9,7 @@ description: "My thoughts on the Surprised Pikachu meme"
 I really liked this, and I think you should too.
 
 ![Surprised Pikachu meme](./meme.png "Surprised Pikachu meme")
+
+![Surprised Raichu meme](./raichu.jpg "Surprised Raichu meme")
+
+![Surprised dino meme](./dino.jpg "Surprised dino meme")
