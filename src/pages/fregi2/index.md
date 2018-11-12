@@ -12,4 +12,6 @@ Simple interface alluding to the company's business domain in publishing.
 - Bootstrap as CSS framework
 - Deployed on Ubuntu with a combination of `nginx` and `gunicorn`
 
+Screenshots
+
 ![Screenshot of home page](./fregi.png "Screenshot of home page")
