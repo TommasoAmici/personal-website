@@ -15,6 +15,7 @@ This very website you're currently on. Open source on [Github](https://github.co
 - Deployed on [Netlify](https://www.netlify.com/)
 
 Screenshots
+
 ![Screenshot of home page](./portfolio.png "Screenshot of home page")
 
 ![Screenshot of projects page](./projects.png "Screenshot of projects page")
