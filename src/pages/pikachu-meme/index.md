@@ -1,5 +1,5 @@
 ---
-path: "/things-i-like/pikachu-meme"
+path: "/misc/pikachu-meme"
 title: "Surprised Pikachu"
 date: "2018-11-09"
 posttype: "blog"
