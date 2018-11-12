@@ -60,7 +60,11 @@ export default ({ offset, title, caption, id, gradient }) => (
             <span>{title}</span>
           </ParallaxLayer>
 
-          <ParallaxLayer className="text header" offset={offset} speed={0.4}>
+          <ParallaxLayer
+            className="text header projects"
+            offset={offset}
+            speed={0.4}
+          >
             <span>
               <h1 className="caption">{caption}</h1>
               <div className={classNames("stripe", gradient)} />

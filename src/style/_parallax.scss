@@ -57,6 +57,7 @@
 }
 
 .header {
+  max-width: 500px;
   margin: {
     left: 150px;
     top: -100px;
@@ -70,12 +71,16 @@
       left: 10%;
     }
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px) {
     margin: {
       left: 5%;
     }
     width: 300px !important;
   }
+}
+
+.header.projects {
+  max-width: 800px;
 }
 
 .logo {
