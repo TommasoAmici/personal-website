@@ -6,16 +6,7 @@ import Slope from "./Slope";
 
 import pic from "./images/pic.png";
 
-export default ({
-  offset,
-  title,
-  caption,
-  first,
-  second,
-  gradient,
-  gradient2,
-  id
-}) => (
+export default ({ offset, title, caption, first, gradient, gradient2, id }) => (
   <>
     <Slope offset={offset} gradient={gradient} />
 
@@ -32,10 +23,9 @@ export default ({
 
     <ParallaxLayer className="text header" offset={offset} speed={0.6}>
       <span>
-        <p className="caption">{caption}</p>
+        <h1 className="caption">{caption}</h1>
         <div className={classNames("stripe", gradient)} />
-        <p>{first}</p>
-        <p className="second">{second}</p>
+        <h3>{first}</h3>
         <SocialLogos />
       </span>
     </ParallaxLayer>

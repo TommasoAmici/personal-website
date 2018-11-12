@@ -33,6 +33,13 @@ module.exports = {
         name: `pages`,
         path: `${__dirname}/src/pages`
       }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/typography/typography`,
+        omitGoogleFont: true
+      }
     }
   ]
 };

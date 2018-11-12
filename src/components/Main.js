@@ -38,8 +38,8 @@ export default class MainPage extends React.Component {
             offset={0}
             gradient="pink"
             gradient2="pink-2"
-            first="Tommaso Amici"
-            caption="Out of Turin, based in Amsterdam"
+            caption="Tommaso Amici"
+            first="Out of Turin, based in Amsterdam"
             title="Home"
           />
           <AboutPage offset={1} gradient="teal" />
