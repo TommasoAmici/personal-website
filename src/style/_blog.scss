@@ -9,16 +9,13 @@
   align-content: center;
   align-items: center;
   width: 70%;
+  margin-top: 50px;
 }
 
 .blog-post {
   margin-left: 10%;
   margin-top: 10%;
-  line-height: 30px;
-}
-
-.misc-list {
-  font-size: 30px;
+  color: $text-color;
 }
 
 .blog-list {
@@ -27,6 +24,7 @@
   width: 20%;
   height: 100%;
   padding: 20px 0px 20px 30px;
+  color: $text-color;
 }
 
 .blog-side-list {

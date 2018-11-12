@@ -38,7 +38,7 @@ export default ({ offset, title, caption, gradient }) => (
 
           <ParallaxLayer className="text header" offset={offset} speed={0.4}>
             <span>
-              <p className="caption">{caption}</p>
+              <h1 className="caption">{caption}</h1>
               <div className={classNames("stripe", gradient)} />
               <ul className="misc-list">{things}</ul>
               <div className="archive-link">

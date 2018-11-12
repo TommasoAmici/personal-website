@@ -33,10 +33,11 @@
   margin: 10px;
   border-radius: 2%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  font-size: 25px;
   text-align: center;
   vertical-align: center;
   &:hover {

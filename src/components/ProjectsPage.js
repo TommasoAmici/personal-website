@@ -48,7 +48,7 @@ export default ({ offset, title, caption, id, gradient }) => (
               `project-gradient-more`
             )}
           >
-            <p>...</p>
+            <div>...</div>
           </div>
         </Link>
       );
@@ -62,7 +62,7 @@ export default ({ offset, title, caption, id, gradient }) => (
 
           <ParallaxLayer className="text header" offset={offset} speed={0.4}>
             <span>
-              <p className="caption">{caption}</p>
+              <h1 className="caption">{caption}</h1>
               <div className={classNames("stripe", gradient)} />
               <div className="projects-container">{projects}</div>
             </span>

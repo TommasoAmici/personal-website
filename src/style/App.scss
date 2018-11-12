@@ -1,4 +1,8 @@
-$font: "Circular Std", "Open Sans", Helvetica;
+@font-face {
+  font-family: "Circular Std";
+  src: url("./CircularStd-Book.woff") format("woff");
+}
+
 $bg-color: rgb(51, 51, 51);
 $bg-blur: rgba(20, 20, 20, 0.6);
 $text-color: rgb(227, 233, 250);
@@ -15,7 +19,6 @@ body {
 }
 
 html {
-  font-family: $font;
   color: $text-color;
   background-color: $bg-color;
 }
@@ -42,6 +45,7 @@ nav {
 
 .nav-li {
   padding: 25px 20px;
+  margin-bottom: 0;
 }
 
 .nav-link {
@@ -53,15 +57,10 @@ nav {
   }
 }
 
-.about-content {
-  font-size: 25px;
-}
-
 .no-underline {
   text-decoration: none;
 }
 
 .archive-link {
-  font-size: 16px;
   text-align: right;
 }

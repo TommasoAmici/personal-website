@@ -9,7 +9,7 @@ export default props => (
     </Helmet>
     <div className="blog-post">
       <h1>{props.title}</h1>
-      <small>{props.date}</small>
+      <h6>{props.date}</h6>
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: props.html }}

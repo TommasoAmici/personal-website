@@ -31,11 +31,7 @@ export default props => {
           </li>
         ));
         if (props.title) {
-          content.unshift(
-            <li key="otherpostsli">
-              <h2>{props.title}</h2>
-            </li>
-          );
+          content.unshift(<h3 key="h3title">{props.title}</h3>);
         }
         const classes = classNames("blog-list", props.classes);
         return <ul className={classes}>{content}</ul>;
