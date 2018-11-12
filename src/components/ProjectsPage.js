@@ -10,6 +10,7 @@ export default ({ offset, title, caption, id, gradient }) => (
       query {
         allMarkdownRemark(
           limit: 7
+          sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { path: { regex: "/projects/" } } }
         ) {
           edges {
