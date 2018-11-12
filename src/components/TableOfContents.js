@@ -7,6 +7,7 @@ export default props => {
     query {
       allMarkdownRemark(
         limit: 100
+        sort: { order: DESC, fields: [frontmatter___date] }
         filter: { frontmatter: { posttype: { eq: "project" } } }
       ) {
         edges {

@@ -25,6 +25,7 @@
   margin-left: 10%;
   margin-top: 10%;
   color: $text-color;
+  max-width: 600px;
   @media screen and (max-width: 750px) {
     margin-left: 0;
   }
@@ -45,4 +46,10 @@
 
 .blog-side-list {
   margin-top: 30%;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

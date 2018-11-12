@@ -9,7 +9,8 @@ export default ({ offset, title, caption, gradient }) => (
     query={graphql`
       query {
         allMarkdownRemark(
-          filter: { frontmatter: { path: { regex: "/things-i-like/" } } }
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: { frontmatter: { posttype: { eq: "blog" } } }
         ) {
           edges {
             node {
