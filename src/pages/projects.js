@@ -13,7 +13,7 @@ export default class Pages extends React.Component {
           <title>Projects</title>
           <meta
             name="description"
-            content="A brief overview of what I've been working on"
+            content="An overview of what I've been working on"
           />
         </Helmet>
         <Main scrollTo={2} />
