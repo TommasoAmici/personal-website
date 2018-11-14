@@ -15,3 +15,5 @@ Simple interface alluding to the company's business domain in publishing.
 Screenshots
 
 ![Screenshot of home page](./fregi.png "Screenshot of home page")
+
+![Screenshot of credits page](./fregi2.png "Screenshot of credits page")
