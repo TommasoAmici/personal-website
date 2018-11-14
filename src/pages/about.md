@@ -4,21 +4,10 @@ date: "2018-11-08"
 path: "/about/raw"
 ---
 
-I like pretty things that work well, and I don't care for travelling.
+I'm an economist turned software developer, which in hindsight I should've been from the beginning.
+Perhaps I'll write a post-mortem of my studies in the future.
 
-# 2018
+As far as software goes, I'm a good Python and Javascript developer, and in the future I'd like to either improve my C or to pick up C++ for systems programming, and more intensive tasks.
+While I could see myself as a backend developer, at the moment I'm more confident in my frontend skills.
 
-- Moved to Amsterdam
-- Started MSc in data science at Leiden University
-- Started working at [Steward Redqueen](http://stewardredqueen.com/)
-- Completed BSc in economics from Utrecht University
-- Picked up JS and React
-
-# 2017
-
-- Lived in Perth for a while
-- Picked up Python and Django, and a tiny bit of C
-
-# 2015
-
-- Moved to Utrecht from Italy (weather's fine)
+I've also always been keen on design, and I think I have developed a good eye for it, despite my lack of formal training.
