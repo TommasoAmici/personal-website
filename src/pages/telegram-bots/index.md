@@ -16,3 +16,19 @@ I can vouch for these two libraries:
 - [`python-telegram-bot`](https://python-telegram-bot.org/) for Telegram
 
 Something I also recently learned is that you can use `youtube-dl` in Python (I only ever used it in the CLI).
+
+## Sandro Cois: a multipurpose bot with plugins
+
+[Source on Github.](https://github.com/TommasoAmici/sandro-cois-bot)
+
+### Available plugins
+
+- `!i` to search Google images
+- `!quote`, `!addquote`, `!unquote` to handle quotes
+- `/magic8ball` Magic 8 ball
+- `!spongebob` to sPOngEBboBiFy a sentence
+- `/weather` through Open weather API
+- `!nsfw` to clear the chat
+- `/9gago` to generate emojis
+
+All the data is stored in JSON format with a port of PickleDB.
