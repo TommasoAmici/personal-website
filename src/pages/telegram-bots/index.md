@@ -19,6 +19,8 @@ Something I also recently learned is that you can use `youtube-dl` in Python (I 
 
 ## Sandro Cois: a multipurpose bot with plugins
 
+![Sandro Cois](./sandrocois.jpeg "Sandro Cois")
+
 [Source on Github.](https://github.com/TommasoAmici/sandro-cois-bot)
 
 ### Available plugins
